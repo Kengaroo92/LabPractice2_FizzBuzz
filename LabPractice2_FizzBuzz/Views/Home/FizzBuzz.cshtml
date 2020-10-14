@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "FizzBuzz";
+}
+
+<br />
+<h1 class="text-center">Find FizzBuzz</h1>
+<br />
+<form asp-action="FizzBuzz">
+    <div class="row">
+        <div class="col-2"><input name="multipleInput1" placeholder="Enter First Multiple:" /></div>
+        <div class="col-1"></div>
+        <div class="col-2"><input name="multipleInput2" placeholder="Enter Second Multiple:" /></div>
+        <div class="col"></div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-2"><input name="rangeInput1" placeholder="Enter Start of Range:" /></div>
+        <div class="col-1"></div>
+        <div class="col-2"><input name="rangeInput2" placeholder="Enter End of Range:" /></div>
+        <div class="col"></div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col"><button type="submit" class="btn btn-outline-warning" style="width: 100%">Find FizzBuzz!</button></div>
+        <div class="col-7"></div>
+    </div>
+</form>
+<br />
+<hr />
+<br />
+    <div class="row"><p>@ViewData["Output"]</p></div>
